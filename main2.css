@@ -1,0 +1,198 @@
+* {
+  /* margin: 0; */
+  padding: 0 5px;
+  font-family: sans-serif;
+}
+
+html {
+  background: #e0e0e0;
+}
+
+.main-background {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.title {
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: #bcd4de; /* #bcd4de */
+  border-radius: 10px;
+  /* margin: 30px 17px 0 17px; */
+  margin-top: 30px;
+  padding-right: 15px;
+  color: #636d71;
+  box-shadow: 2px 5px 11px 5px #a5ccd1;
+  max-width: 975px;
+}
+
+.title h1 {
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+}
+
+.add-movie-column {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 260px;
+  padding: 20px 10px 10px 10px;
+  margin: 15px;
+  background-color: #c1e9cc;
+  border-radius: 10px;
+  box-shadow: 2px 5px 11px 5px #a5ccd1;
+}
+
+.add-movie-column h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #636d71;
+}
+
+/** Toggle Switch styling */
+
+.switch {
+  position: relative;
+}
+
+.switch label {
+  width: 55px;
+  height: 23px;
+  background-color: #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+}
+
+.switch input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.switch label:after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  border-radius: 50px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: 100ms;
+  background-color: white;
+}
+
+.switch .look:checked + label:after {
+  left: 32px;
+}
+
+.switch .look:checked + label {
+  background-color: rgb(59, 150, 97);
+}
+
+/** Toggle Switch End */
+
+.add-movie-entry .btn {
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+form {
+  text-align: center;
+  border: none;
+}
+
+input {
+  padding: 4px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.watched-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 15px 30px 0;
+}
+
+/** add Movie to list button styling */
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #c1e9cc, 45%, #a5ccd1);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #636d71;
+  display: flex;
+  font-family: sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  /* outline: 1px; */
+  border: 2px solid #3b9661;
+  transition: ease-in-out 80ms;
+}
+
+.button-64 span {
+  align-items: center;
+  justify-content: center;
+  background-color: #bcd4de;
+  padding: 12px 39px;
+  border-radius: 6px;
+  width: 70%;
+  height: 70%;
+  transition: 300ms;
+  font-weight: 600;
+}
+
+.button-64:hover span {
+  background: none;
+  color: #36b772;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    /* font-size: 24px; */
+    min-width: 196px;
+  }
+}
+/** add Movie to list button styling end */
+
+.movie-list-container {
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 11px 5px #a5ccd1;
+  padding: 20px 10px 10px 10px;
+  margin: 15px;
+  color: #c1e9cc;
+}
+
+.total-movie-container {
+  margin-top: 20px;
+  padding-left: 16px;
+  display: flex;
+  width: 968px;
+  justify-content: center;
+  align-items: center;
+}

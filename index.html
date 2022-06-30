@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tracker</title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+<body>
+  <div class="main-background">
+    
+      <div class="title">
+        <h1>Movie Watch List</h1>
+      </div>
+
+      <div class="total-movie-container"> 
+        <div class="add-movie-column" class="grid-one">
+          <h3>Add Movie</h3>
+          <div class="movie-info-entry">
+            <div class="add-movie-entry">
+              <form action="">
+                <input id="movie-title" class="btn" type="text" placeholder="Movie Title"><br> 
+                <input id="release-date" class="btn" type="text" placeholder="Release Date"><br> 
+                <input id="genre" class="btn" type="text" placeholder="Genre"><br> 
+              </form>    
+            </div>
+            
+          </div>
+          <div class="watched-section">
+            <h4>Seen it?</h4>
+              <div class="switch">
+                <input id="checkbox1" class="look" type="checkbox">
+                <label for="checkbox1"></label>
+              </div>
+          </div>
+            <div>
+              <button class="button-64" role="button">
+                <span onclick="addMovieToList()" class="text">Add Movie to List</span>
+              </button>
+            </div>
+            
+        </div>
+    
+        <div class="movie-list-container" class="grid-two">
+         <div class="movie-list-options">
+          <button id="watched">Watched</button>
+          <button id="need-to-watch">Need to Watch</button> 
+         </div>
+        <div class="movie-list">
+            
+        </div>
+       </div>
+
+      </div>
+
+     
+
+  </div> 
+
+</body>
+</html>
+    <script src="only.js"></script>
+  </body>
+</html>
+
